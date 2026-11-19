@@ -1,0 +1,62 @@
+/* app/assets/css/main.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #0b0d0f;
+    color: #eceae3;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: rgba(16, 185, 129, 0.25);
+    color: #f7f6f2;
+  }
+
+  /* Make sure images never crash or render ugly broken frames */
+  img {
+    font-style: italic;
+  }
+}
+
+@layer utilities {
+  /* Editorial italic styling */
+  .font-editorial {
+    font-family: 'Newsreader', Iowan Old Style, Palatino Linotype, Georgia, serif;
+    font-optical-sizing: auto;
+  }
+
+  /* Thin hairline rule */
+  .border-hairline {
+    border-width: 1px;
+    border-color: #222730;
+  }
+
+  /* Subtle emerald accent text underline */
+  .editorial-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.2s ease;
+  }
+
+  .editorial-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #34d399;
+    transition: width 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .editorial-link:hover::after {
+    width: 100%;
+  }
+}

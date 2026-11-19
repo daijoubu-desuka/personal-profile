@@ -1,0 +1,39 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14171a"/>
+      <stop offset="100%" stop-color="#0a0c0e"/>
+    </linearGradient>
+    <linearGradient id="emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="silver" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e6edf3"/>
+      <stop offset="100%" stop-color="#8b949e"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="500" height="500" fill="url(#bg)"/>
+  
+  <!-- Subtle architectural grid lines -->
+  <line x1="50" y1="0" x2="50" y2="500" stroke="#22272e" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="450" y1="0" x2="450" y2="500" stroke="#22272e" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="0" y1="450" x2="500" y2="450" stroke="#22272e" stroke-width="1" stroke-dasharray="4 4"/>
+  
+  <!-- Concentric decorative rings -->
+  <circle cx="250" cy="220" r="140" fill="none" stroke="#22272e" stroke-width="1"/>
+  <circle cx="250" cy="220" r="120" fill="none" stroke="#34d399" stroke-width="1" stroke-opacity="0.25" stroke-dasharray="6 6"/>
+  
+  <!-- Silhouette / Monogram Art -->
+  <circle cx="250" cy="180" r="65" fill="#1b2028" stroke="#34d399" stroke-width="2" stroke-opacity="0.6"/>
+  <path d="M 140 370 C 140 290, 200 270, 250 270 C 300 270, 360 290, 360 370 Z" fill="#1b2028" stroke="#34d399" stroke-width="1.5" stroke-opacity="0.5"/>
+  
+  <!-- Stylized Monogram overlay -->
+  <text x="250" y="240" font-family="'Newsreader', Georgia, serif" font-size="76" font-style="italic" font-weight="300" fill="url(#silver)" text-anchor="middle">AR</text>
+  
+  <!-- Minimalist metadata stamp -->
+  <text x="250" y="420" font-family="'JetBrains Mono', monospace" font-size="11" letter-spacing="4" fill="#34d399" text-anchor="middle">ALEX RIVERA · BSIT</text>
+  <text x="250" y="438" font-family="'JetBrains Mono', monospace" font-size="9" letter-spacing="2" fill="#6e7681" text-anchor="middle">PORTFOLIO EDITION · 2024</text>
+</svg>
